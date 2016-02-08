@@ -16,6 +16,7 @@
 Template.postsList.helpers({
 	// posts: postsData
 	posts: function() {
-		return Posts.find();
+		// return Posts.find();
+		return Posts.find({category: 'Java'});
 	}
 });
